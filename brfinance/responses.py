@@ -155,6 +155,7 @@ class GetCVMCodesResponse():
     def _parse_get_cvm_codes(self, html):
         hdnEmpresas = BeautifulSoup(
             html, features="lxml").find(id='hdnEmpresas')
+
         hdnEmpresas = hdnEmpresas.attrs["value"]
         hdnEmpresas = hdnEmpresas.replace('{ key:', '{ "key":')
         hdnEmpresas = hdnEmpresas.replace(', value:', ', "value":')
@@ -163,6 +164,7 @@ class GetCVMCodesResponse():
 
         empresas = {}
         for empresa in empresas_json:
+            print(empresa)
             empresa_value = empresa["value"].split(" - ")
             empresas[empresa_value[0]] = empresa_value[-1]
         return empresas

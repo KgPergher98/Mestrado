@@ -1,1 +1,0 @@
-,cod_cvm,empresa,categoria,tipo,especie,ref_date,data_entrega,status,version,modalidade,acoes,outros,view_url,numero_seq_documento,codigo_tipo_instituicao,numSequencia,numVersao,numProtocolo,descTipo

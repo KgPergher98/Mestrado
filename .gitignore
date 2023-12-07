@@ -1,2 +1,6 @@
 log_files/
 feeder_db/merge_datasets.ipynb
+ArquivosLog/
+cvm/
+reports_cvm/
+.ipynb

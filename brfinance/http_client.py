@@ -1,4 +1,5 @@
 import logging
+import lxml # IMPORTANTE PARA GARNATIR QUE VOCE INSTALE
 
 from bs4 import BeautifulSoup
 from datetime import date
